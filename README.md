@@ -17,37 +17,41 @@ This repository contains a ToDo application developed using ReactJS with TypeScr
 - .NET 8 SDK
 
 ### Backend Setup
-1. Navigate to the backend directory:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/k-f-m/react-typescript-todo-app.git
+    ```
+2. Navigate to the backend directory:
     ```bash
     cd react-typescript-todo-app/backend
     ```
-2. Restore the dependencies:
+3. Restore the dependencies:
     ```bash
     dotnet restore
     ```
-3. Build the application:
+4. Apply migrations to set up the SQLite database:
+   ```bash
+   dotnet ef database update
+   ```
+5. Build the application:
     ```bash
     dotnet build
     ```
-4. Run the application:
+6. Run the application:
     ```bash
     dotnet run
     ```
 
 ### Frontend Setup
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/k-f-m/react-typescript-todo-app.git
-    ```
-2. Navigate to the frontend directory:
+1. Navigate to the frontend directory:
     ```bash
     cd react-typescript-todo-app/frontend
     ```
-3. Install the dependencies:
+2. Install the dependencies:
     ```bash
     npm install
     ```
-4. Start the development server:
+3. Start the development server:
     ```bash
     npm start
     ```
