@@ -23,7 +23,7 @@ This repository contains a ToDo application developed using ReactJS with TypeScr
     ```
 2. Navigate to the backend directory:
     ```bash
-    cd react-typescript-todo-app/backend
+    cd react-typescript-todo-app/todo-app.Server
     ```
 3. Restore the dependencies:
     ```bash
@@ -45,7 +45,7 @@ This repository contains a ToDo application developed using ReactJS with TypeScr
 ### Frontend Setup
 1. Navigate to the frontend directory:
     ```bash
-    cd react-typescript-todo-app/frontend
+    cd react-typescript-todo-app/todo-app.client
     ```
 2. Install the dependencies:
     ```bash
