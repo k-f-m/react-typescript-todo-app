@@ -1,0 +1,21 @@
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    word-break: break-word;
+}
+
+.task-table th div,
+.task-table td div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    word-break: normal;
+}

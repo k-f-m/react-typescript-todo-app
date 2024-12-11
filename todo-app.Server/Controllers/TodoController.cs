@@ -33,6 +33,27 @@ namespace TodoApp.Server.Controllers
             return Ok(item);
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, [FromBody] TodoItem updatedItem)
+        {
+            var item = await _context.TodoItems.FindAsync(id);
+            if (item == null)
+                return NotFound();
+
+            item.IsDone = updatedItem.IsDone;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error updating data");
+            }
+
+            return Ok(item);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
