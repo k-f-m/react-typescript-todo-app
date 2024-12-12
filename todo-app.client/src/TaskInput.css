@@ -10,19 +10,24 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
+    font-family: Calibri, sans-serif;
+    font-size: medium;
 }
 
 .task-button {
     padding: 10px 20px;
-    background: linear-gradient(90deg, #0073e6, #00c1d4); /* Vibrant blue gradient */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Peachy orange to soft yellow gradient */
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
 }
 
     .task-button:hover {
-        background: linear-gradient(90deg, #00c1d4, #0073e6); /* Reversed gradient for hover effect */
+        background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient for hover effect */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increase the shadow on hover */
     }
 
 .error-message {

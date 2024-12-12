@@ -3,14 +3,19 @@
 }
 
 .task-pending {
-    background-color: #ffe0e0;
+    background-color: #f4f4f4;
+}
+
+.task-overdue {
+    background-color: #ffcccc;
 }
 
 .action-button {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.1s ease;
+    border-radius: 10px;
 }
 
 .action-button:hover {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }

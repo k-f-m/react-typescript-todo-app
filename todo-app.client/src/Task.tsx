@@ -22,8 +22,10 @@ const Task: React.FC<TaskProps> = ({ task, setTasks }) => {
         });
     };
 
+    const isOverdue = task.deadline && new Date(task.deadline) < new Date();
+
     return (
-        <tr className={task.isDone ? "task-done" : "task-pending"}>
+        <tr className={`${task.isDone ? 'task-done' : 'task-pending'} ${isOverdue ? 'task-overdue' : ''}`}>
             <td>{task.description}</td>
             <td>{task.deadline ? new Date(task.deadline).toLocaleDateString() : 'No deadline'}</td>
             <td>
