@@ -1,4 +1,5 @@
 # ToDo App
+![todo-app](https://github.com/user-attachments/assets/1aa4018d-7738-4beb-8935-3261e063dbcb)
 
 ## Description
 This repository contains a ToDo application developed using ReactJS with TypeScript for the frontend and ASP.NET Core 8 with C# for the backend. The app is designed to help users manage their tasks efficiently with minimalistic and functional features.
@@ -30,16 +31,20 @@ This repository contains a ToDo application developed using ReactJS with TypeScr
     dotnet restore
     ```
 4. Apply migrations to set up the SQLite database:
-   ```bash
-   dotnet ef database update
-   ```
+    ```bash
+    dotnet ef database update
+    ```
 5. Build the application:
     ```bash
     dotnet build
     ```
-6. Run the application:
+6. Trust the HTTPS development certificate:
     ```bash
-    dotnet run
+    dotnet dev-certs https --trust
+    ```
+7. Run the application with the HTTPS profile:
+    ```bash
+    dotnet run --launch-profile https
     ```
 
 ### Frontend Setup
@@ -53,7 +58,7 @@ This repository contains a ToDo application developed using ReactJS with TypeScr
     ```
 3. Start the development server:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Usage
